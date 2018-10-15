@@ -51,7 +51,7 @@ A dictionary is a key component when Darwinizing a dataset. It's basically a loo
 
 ### The Darwin Cloud dictionary
 
-The Darwin Cloud dictionary [@DarwinCloud], is a lookup table that accumulates different variations in DwC field names from different publishers. This valuable and critical dictionary was created and is maintained by the Kurator project (http://kurator.acis.ufl.edu/kurator-web/), which provides workflow tools for data quality improvement of biodiversity data, via a user-friendly web interface. The development of bdDwC was inspired by [Kurator's own Darwinizer](https://github.com/kurator-org/kurator-validation/wiki/CSV-File-Darwinizer target="_blank").
+The Darwin Cloud dictionary [@DarwinCloud], is a lookup table that accumulates different variations in DwC field names from different publishers. This valuable and critical dictionary was created and is maintained by the Kurator project (http://kurator.acis.ufl.edu/kurator-web/), which provides workflow tools for data quality improvement of biodiversity data, via a user-friendly web interface. The development of bdDwC was inspired by <a href= https://github.com/kurator-org/kurator-validation/wiki/CSV-File-Darwinizer target="_blank">Kurator's own Darwinizer</a>.
 
 #### Updating the Darwin Cloud {-}
 
