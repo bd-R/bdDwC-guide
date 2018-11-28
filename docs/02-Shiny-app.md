@@ -5,7 +5,7 @@
 ## Launching the app
 
 ```r
-library(bdDwC) # Uplaod package library
+library(bdDwC) # Laod package library
 runDwC() # Launch the app
 ```
 
@@ -15,7 +15,7 @@ runDwC() # Launch the app
 
 ![bdDwC App Overview](img/bdDwC_Getting_started.png "The first screen")
 
- In the first screen, you'll need to upload or download your biodiversity data; choose dictionary and run the Darwinizer.
+ In the first screen, you'll need to load your biodiversity data; choose dictionary and run the Darwinizer. There are two options, form a file on your computer, of fetch from a web based data provider.
 
 ## Data upload
 
@@ -53,17 +53,17 @@ A dictionary is a key component when Darwinizing a dataset. It's basically a loo
 
 The Darwin Cloud dictionary [@DarwinCloud], is a lookup table that accumulates different variations in DwC field names from different publishers. This valuable and critical dictionary was created and is maintained by the Kurator project (http://kurator.acis.ufl.edu/kurator-web/), which provides workflow tools for data quality improvement of biodiversity data, via a user-friendly web interface. The development of bdDwC was inspired by <a href= https://github.com/kurator-org/kurator-validation/wiki/CSV-File-Darwinizer target="_blank">Kurator's own Darwinizer</a>.
 
-#### Updating the Darwin Cloud {-}
+#### Updating the Darwin Cloud dictionary{-}
 
-It's recommended to update the Darwin Cloud file. This can be done easily by clicking the **Update DC** button.
+It's recommended to update the Darwin Cloud dictionary file. This can be done easily by clicking the **Update DC** button.
 
 [comment]: <> (Need-To-Be-Updated!)
 
-![Updating the Darwin Cloud](img/bdDwC_update-DC.png "bdDwC-app bdDwC_update-DC")
+![Updating the Darwin Cloud dictionary](img/bdDwC_update-DC.png "bdDwC-app bdDwC_update-DC")
 
-### Your own dictionary
+### Custom dictionary
 
-It's also possible to add your own dictionary by simply creating a CSV file with two columns, one for the Field Names and one for the Standard Names.
+It's also possible to add your own dictionary by creating a CSV file with two columns, one for the Field Names and one for the Standard Names. After uploading the custom disctionary, we need to specify which field denotes the 'User fierld names' and which is the 'Standard (DwC) field names'. 
 
 [comment]: <> (Need-To-Be-Updated!)
 
@@ -71,7 +71,7 @@ It's also possible to add your own dictionary by simply creating a CSV file with
 
 ## Darwinizing your dataset
 
-Once a dataset is uploaded, the 'Submit to Darwinizer' button is activated, Clicking it will Darwinize the dataset.
+Once a dataset is uploaded, the 'Submit to Darwinizer' button is activated, Clicking it will begin the interactive 'Darwinize the dataset' process.
 
 [comment]: <> (Need-To-Be-Updated!)
 

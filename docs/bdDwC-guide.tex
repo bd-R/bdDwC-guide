@@ -125,7 +125,7 @@
   \postauthor{\par}
       \predate{\centering\large\emph}
   \postdate{\par}
-    \date{built on 2018-10-15 - for bdDwC v0.1.20}
+    \date{built on2018-11-28 - for bdDwC v0.1.21}
 
 \usepackage{booktabs}
 
@@ -153,11 +153,11 @@
 \chapter*{Introduction}\label{introduction}
 \addcontentsline{toc}{chapter}{Introduction}
 
-\texttt{bdDwC} is an R package that supplies a Shiny app and a set of
-functions for standardizing field names according to the Darwin Core
-(DwC) format. \texttt{bdDwC} is a key element in the \texttt{bdverse}--
-a collection of tools, that form a general framework for facilitating
-biodiversity science in R.
+\texttt{bdDwC} is a R package that supplies an interactive Shiny app and
+a set of functions for standardizing field names in compliance to the
+Darwin Core (DwC) format. \texttt{bdDwC} is a key element in the
+\texttt{bdverse}-- a collection of tools, that form a general framework
+for facilitating biodiversity science in R.
 
 \begin{figure}
 \centering
@@ -188,8 +188,9 @@ a dataset}
 
 Running the Darwinizer enables you to standardize many field names in
 your dataset -- and that allows the \texttt{bdverse} to handle data from
-various biodiversity portals, and lets you enjoy all of \texttt{bdvers}
-features, regardless of publishers variation in field names.
+various biodiversity portals seamlessly, and lets you enjoy all of
+\texttt{bdvers} features, regardless of publishers variation in field
+names.
 
 \subsubsection*{Fundings}\label{fundings}
 \addcontentsline{toc}{subsubsection}{Fundings}
@@ -202,8 +203,11 @@ features, regardless of publishers variation in field names.
 
 \href{https://summerofcode.withgoogle.com/\%20target=\%22_blank\%22}{\includegraphics{img/GSoC.png}}
 
-\href{https://github.com/rstats-gsoc/gsoc2018/wiki/Darwinazing-biodiversity-data-in-R\%20target=\%22_blank\%22}{See
-the GSoC project idea page}
+\begin{itemize}
+\tightlist
+\item
+  See the GSoC project idea page
+\end{itemize}
 
 \chapter{\texorpdfstring{Installing
 \texttt{bdDwC}}{Installing bdDwC}}\label{installing-bddwc}
@@ -252,7 +256,7 @@ TBA
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(bdDwC) }\CommentTok{# Uplaod package library}
+\KeywordTok{library}\NormalTok{(bdDwC) }\CommentTok{# Laod package library}
 \KeywordTok{runDwC}\NormalTok{() }\CommentTok{# Launch the app}
 \end{Highlighting}
 \end{Shaded}
@@ -265,8 +269,9 @@ TBA
 \caption{bdDwC App Overview}
 \end{figure}
 
-In the first screen, you'll need to upload or download your biodiversity
-data; choose dictionary and run the Darwinizer.
+In the first screen, you'll need to load your biodiversity data; choose
+dictionary and run the Darwinizer. There are two options, form a file on
+your computer, of fetch from a web based data provider.
 
 \section{Data upload}\label{data-upload}
 
@@ -323,24 +328,27 @@ workflow tools for data quality improvement of biodiversity data, via a
 user-friendly web interface. The development of bdDwC was inspired by
 Kurator's own Darwinizer.
 
-\subsubsection*{Updating the Darwin
-Cloud}\label{updating-the-darwin-cloud}
-\addcontentsline{toc}{subsubsection}{Updating the Darwin Cloud}
+\subsubsection*{Updating the Darwin Cloud
+dictionary}\label{updating-the-darwin-cloud-dictionary}
+\addcontentsline{toc}{subsubsection}{Updating the Darwin Cloud
+dictionary}
 
-It's recommended to update the Darwin Cloud file. This can be done
-easily by clicking the \textbf{Update DC} button.
+It's recommended to update the Darwin Cloud dictionary file. This can be
+done easily by clicking the \textbf{Update DC} button.
 
 \begin{figure}
 \centering
 \includegraphics{img/bdDwC_update-DC.png}
-\caption{Updating the Darwin Cloud}
+\caption{Updating the Darwin Cloud dictionary}
 \end{figure}
 
-\subsection{Your own dictionary}\label{your-own-dictionary}
+\subsection{Custom dictionary}\label{custom-dictionary}
 
-It's also possible to add your own dictionary by simply creating a CSV
-file with two columns, one for the Field Names and one for the Standard
-Names.
+It's also possible to add your own dictionary by creating a CSV file
+with two columns, one for the Field Names and one for the Standard
+Names. After uploading the custom disctionary, we need to specify which
+field denotes the `User fierld names' and which is the `Standard (DwC)
+field names'.
 
 \begin{figure}
 \centering
@@ -351,7 +359,8 @@ Names.
 \section{Darwinizing your dataset}\label{darwinizing-your-dataset}
 
 Once a dataset is uploaded, the `Submit to Darwinizer' button is
-activated, Clicking it will Darwinize the dataset.
+activated, Clicking it will begin the interactive `Darwinize the
+dataset' process.
 
 \begin{figure}
 \centering
@@ -432,7 +441,7 @@ Rename your dataset field names to Darwinized names using
 
 \section{\texorpdfstring{Updating
 \protect\hyperlink{the-darwin-cloud-dictionary}{the Darwin Cloud
-dictionary}}{Updating the Darwin Cloud dictionary}}\label{updating-the-darwin-cloud-dictionary}
+dictionary}}{Updating the Darwin Cloud dictionary}}\label{updating-the-darwin-cloud-dictionary-1}
 
 To get newest version of Darwin Cloud Data run:
 
@@ -484,7 +493,7 @@ citation}{bdDwC citation}}\label{bddwc-citation}
 ## 
 ##   Povilas Gibas, Tomer Gueta, Vijay Barve, Thiloshon Nagarajah and
 ##   Yohay Carmel (2018). bdDwC: field names conversion to Darwin
-##   Core (DwC) format. R package version 0.1.20.
+##   Core (DwC) format. R package version 0.1.21.
 ##   https://github.com/bd-R/bdDwC
 ## 
 ## A BibTeX entry for LaTeX users is
@@ -493,7 +502,7 @@ citation}{bdDwC citation}}\label{bddwc-citation}
 ##     title = {bdDwC: field names conversion to Darwin Core (DwC) format},
 ##     author = {Povilas Gibas and Tomer Gueta and Vijay Barve and Thiloshon Nagarajah and Yohay Carmel},
 ##     year = {2018},
-##     note = {R package version 0.1.20},
+##     note = {R package version 0.1.21},
 ##     url = {https://github.com/bd-R/bdDwC},
 ##   }
 \end{verbatim}
@@ -505,19 +514,19 @@ Darwin Core}\label{learn-more-about-darwin-core}}
 
 \begin{itemize}
 \item
-  \textbf{\href{https://github.com/tdwg/dwc-qa\%20target=\%22_blank\%22}{The
-  Darwin Core Questions \& Answers Site}}
+  \textbf{\href{https://github.com/tdwg/dwc-qa}{The Darwin Core
+  Questions \& Answers Site}}
 \item
-  \textbf{\href{https://github.com/tdwg/dwc-qa/wiki/Webinars\%20target=\%22_blank\%22}{Darwin
+  \textbf{\href{https://github.com/tdwg/dwc-qa/wiki/Webinars}{Darwin
   Core Hour webinar series}}
 \item
-  \textbf{\href{https://github.com/tdwg/dwc-qa/wiki\%20target=\%22_blank\%22}{The
-  Darwin Core Questions \& Answers wiki}}
+  \textbf{\href{https://github.com/tdwg/dwc-qa/wiki}{The Darwin Core
+  Questions \& Answers wiki}}
 \item
-  \textbf{\href{https://www.gbif.org/darwin-core\%20target=\%22_blank\%22}{GBIF:
-  What is Darwin Core, and why does it matter?}}
+  \textbf{\href{https://www.gbif.org/darwin-core}{GBIF: What is Darwin
+  Core, and why does it matter?}}
 \item
-  \textbf{\href{https://doi.org/10.1371/journal.pone.0029715\%20target=\%22_blank\%22}{Darwin
+  \textbf{\href{https://doi.org/10.1371/journal.pone.0029715}{Darwin
   Core: An Evolving Community-Developed Biodiversity Data Standard}
   \citep{DwC-paper} }
 \end{itemize}
@@ -525,7 +534,7 @@ Darwin Core}\label{learn-more-about-darwin-core}}
 \subsubsection*{References}\label{references-1}
 \addcontentsline{toc}{subsubsection}{References}
 
-\bibliography{bib/book.bib,bib/DarwinCloud.bib,bib/DwC-paper.bib}
+\bibliography{bib/DarwinCloud.bib,bib/DwC-paper.bib}
 
 
 \end{document}

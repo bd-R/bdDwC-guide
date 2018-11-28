@@ -1,11 +1,8 @@
 --- 
 title: '`bdDwC` User Guide'
 author: 'Authors: Tomer Gueta and Povilas Gibas'
-date: '`r paste0(''built on '', Sys.Date(), '' - for bdDwC v'', packageVersion(''bdDwC''))`'
-bibliography:
-- bib/book.bib
-- bib/DarwinCloud.bib
-- bib/DwC-paper.bib
+date: '`r paste0("built on", Sys.Date(), " - for bdDwC v", packageVersion("bdDwC"))`'
+bibliography: [bib/DarwinCloud.bib, bib/DwC-paper.bib]
 description: 'Darwinize your data: field names conversion to Darwin Core (DwC) format'
 documentclass: book
 github-repo: bd-R/bdDwC-guide

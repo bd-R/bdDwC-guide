@@ -1,20 +1,20 @@
 --- 
-title: "`bdDwC` User Guide"
-author: "Authors: Tomer Gueta and Povilas Gibas"
-date: "built on 2018-10-15 - for bdDwC v0.1.20"
-site: bookdown::bookdown_site
+title: '`bdDwC` User Guide'
+author: 'Authors: Tomer Gueta and Povilas Gibas'
+date: 'built on2018-11-28 - for bdDwC v0.1.21'
+bibliography: [bib/DarwinCloud.bib, bib/DwC-paper.bib]
+description: 'Darwinize your data: field names conversion to Darwin Core (DwC) format'
 documentclass: book
-bibliography: [bib/book.bib, bib/DarwinCloud.bib, bib/DwC-paper.bib]
-biblio-style: apalike
-link-citations: yes
 github-repo: bd-R/bdDwC-guide
-url: 'http\://bd-r.github.io/bdDwC-guide/'
-description: "Darwinize your data: field names conversion to Darwin Core (DwC) format"
+link-citations: yes
+site: bookdown::bookdown_site
+biblio-style: apalike
+url: http\://bd-r.github.io/bdDwC-guide/
 ---
 
 # Introduction {-}
 
-`bdDwC` is an R package that supplies a Shiny app and a set of functions for standardizing field names according to the Darwin Core (DwC) format. `bdDwC` is a key element in the `bdverse`-- a collection of tools, that form a general framework for facilitating biodiversity science in R.
+`bdDwC` is a R package that supplies an interactive Shiny app and a set of functions for standardizing field names in compliance to the Darwin Core (DwC) format. `bdDwC` is a key element in the `bdverse`-- a collection of tools, that form a general framework for facilitating biodiversity science in R.
 
 ![bdDwC in the bdverse](img/bdDwC_bdverse.png "bdDwC-bdverse")
 
@@ -24,7 +24,7 @@ Darwin Core (DwC) is a global standard for publishing biodiversity data, whose g
 
 #### Why it's important to "Darwinize" a dataset {-}
 
-Running the Darwinizer enables you to standardize many field names in your dataset -- and that allows the `bdverse` to handle data from various biodiversity portals, and lets you enjoy all of `bdvers` features, regardless of publishers variation in field names.
+Running the Darwinizer enables you to standardize many field names in your dataset -- and that allows the `bdverse` to handle data from various biodiversity portals seamlessly, and lets you enjoy all of `bdvers` features, regardless of publishers variation in field names.
 
 #### Fundings {-}
 
@@ -32,5 +32,5 @@ Running the Darwinizer enables you to standardize many field names in your datas
 
 [![](img/GSoC.png "GSoC website")](https://summerofcode.withgoogle.com/ target="_blank")  
 
-[See the GSoC project idea page](https://github.com/rstats-gsoc/gsoc2018/wiki/Darwinazing-biodiversity-data-in-R target="_blank")
+* <a href="https://github.com/rstats-gsoc/gsoc2018/wiki/Darwinazing-biodiversity-data-in-R" target="_blank">See the GSoC project idea page</a>
 

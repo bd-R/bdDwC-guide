@@ -120,7 +120,7 @@ code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="2.4" data-path="the-shiny-app.html"><a href="the-shiny-app.html#dictionaries"><i class="fa fa-check"></i><b>2.4</b> Dictionaries</a><ul>
 <li class="chapter" data-level="2.4.1" data-path="the-shiny-app.html"><a href="the-shiny-app.html#the-darwin-cloud-dictionary"><i class="fa fa-check"></i><b>2.4.1</b> The Darwin Cloud dictionary</a></li>
-<li class="chapter" data-level="2.4.2" data-path="the-shiny-app.html"><a href="the-shiny-app.html#your-own-dictionary"><i class="fa fa-check"></i><b>2.4.2</b> Your own dictionary</a></li>
+<li class="chapter" data-level="2.4.2" data-path="the-shiny-app.html"><a href="the-shiny-app.html#custom-dictionary"><i class="fa fa-check"></i><b>2.4.2</b> Custom dictionary</a></li>
 </ul></li>
 <li class="chapter" data-level="2.5" data-path="the-shiny-app.html"><a href="the-shiny-app.html#darwinizing-your-dataset"><i class="fa fa-check"></i><b>2.5</b> Darwinizing your dataset</a></li>
 <li class="chapter" data-level="2.6" data-path="the-shiny-app.html"><a href="the-shiny-app.html#darwinizer-results"><i class="fa fa-check"></i><b>2.6</b> Darwinizer results</a><ul>
@@ -133,7 +133,7 @@ code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="3" data-path="command-line-operations.html"><a href="command-line-operations.html"><i class="fa fa-check"></i><b>3</b> Command line operations</a><ul>
 <li class="chapter" data-level="3.1" data-path="command-line-operations.html"><a href="command-line-operations.html#load-package"><i class="fa fa-check"></i><b>3.1</b> Load package</a></li>
 <li class="chapter" data-level="3.2" data-path="command-line-operations.html"><a href="command-line-operations.html#darwinizing-a-dataset"><i class="fa fa-check"></i><b>3.2</b> Darwinizing a dataset</a></li>
-<li class="chapter" data-level="3.3" data-path="command-line-operations.html"><a href="command-line-operations.html#updating-the-darwin-cloud-dictionary"><i class="fa fa-check"></i><b>3.3</b> Updating <a href="the-shiny-app.html#the-darwin-cloud-dictionary">the Darwin Cloud dictionary</a></a></li>
+<li class="chapter" data-level="3.3" data-path="command-line-operations.html"><a href="command-line-operations.html#updating-the-darwin-cloud-dictionary-1"><i class="fa fa-check"></i><b>3.3</b> Updating <a href="the-shiny-app.html#the-darwin-cloud-dictionary">the Darwin Cloud dictionary</a></a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="examples.html"><a href="examples.html"><i class="fa fa-check"></i><b>4</b> Examples</a></li>
 <li class="chapter" data-level="5" data-path="getting-your-feedback.html"><a href="getting-your-feedback.html"><i class="fa fa-check"></i><b>5</b> Getting your feedback</a><ul>
@@ -165,11 +165,11 @@ code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Inf
 <div id="header">
 <h1 class="title"><code>bdDwC</code> User Guide</h1>
 <h4 class="author"><em>Authors: Tomer Gueta and Povilas Gibas</em></h4>
-<h4 class="date"><em>built on 2018-10-15 - for bdDwC v0.1.20</em></h4>
+<h4 class="date"><em>built on2018-11-28 - for bdDwC v0.1.21</em></h4>
 </div>
 <div id="introduction" class="section level1 unnumbered">
 <h1>Introduction</h1>
-<p><code>bdDwC</code> is an R package that supplies a Shiny app and a set of functions for standardizing field names according to the Darwin Core (DwC) format. <code>bdDwC</code> is a key element in the <code>bdverse</code>– a collection of tools, that form a general framework for facilitating biodiversity science in R.</p>
+<p><code>bdDwC</code> is a R package that supplies an interactive Shiny app and a set of functions for standardizing field names in compliance to the Darwin Core (DwC) format. <code>bdDwC</code> is a key element in the <code>bdverse</code>– a collection of tools, that form a general framework for facilitating biodiversity science in R.</p>
 <div class="figure">
 <img src="img/bdDwC_bdverse.png" title="bdDwC-bdverse" alt="bdDwC in the bdverse" />
 <p class="caption">bdDwC in the bdverse</p>
@@ -180,7 +180,7 @@ code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <div id="why-its-important-to-darwinize-a-dataset" class="section level4 unnumbered">
 <h4>Why it’s important to “Darwinize” a dataset</h4>
-<p>Running the Darwinizer enables you to standardize many field names in your dataset – and that allows the <code>bdverse</code> to handle data from various biodiversity portals, and lets you enjoy all of <code>bdvers</code> features, regardless of publishers variation in field names.</p>
+<p>Running the Darwinizer enables you to standardize many field names in your dataset – and that allows the <code>bdverse</code> to handle data from various biodiversity portals seamlessly, and lets you enjoy all of <code>bdvers</code> features, regardless of publishers variation in field names.</p>
 </div>
 <div id="fundings" class="section level4 unnumbered">
 <h4>Fundings</h4>
@@ -189,7 +189,9 @@ code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Inf
 
 </div>
 <p><a href="https://summerofcode.withgoogle.com/%20target=%22_blank%22"><img src="img/GSoC.png" title="GSoC website" /></a></p>
-<p><a href="https://github.com/rstats-gsoc/gsoc2018/wiki/Darwinazing-biodiversity-data-in-R%20target=%22_blank%22">See the GSoC project idea page</a></p>
+<ul>
+<li><a href="https://github.com/rstats-gsoc/gsoc2018/wiki/Darwinazing-biodiversity-data-in-R" target="_blank">See the GSoC project idea page</a></li>
+</ul>
 
 </div>
 </div>

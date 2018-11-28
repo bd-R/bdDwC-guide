@@ -120,7 +120,7 @@ code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="2.4" data-path="the-shiny-app.html"><a href="the-shiny-app.html#dictionaries"><i class="fa fa-check"></i><b>2.4</b> Dictionaries</a><ul>
 <li class="chapter" data-level="2.4.1" data-path="the-shiny-app.html"><a href="the-shiny-app.html#the-darwin-cloud-dictionary"><i class="fa fa-check"></i><b>2.4.1</b> The Darwin Cloud dictionary</a></li>
-<li class="chapter" data-level="2.4.2" data-path="the-shiny-app.html"><a href="the-shiny-app.html#your-own-dictionary"><i class="fa fa-check"></i><b>2.4.2</b> Your own dictionary</a></li>
+<li class="chapter" data-level="2.4.2" data-path="the-shiny-app.html"><a href="the-shiny-app.html#custom-dictionary"><i class="fa fa-check"></i><b>2.4.2</b> Custom dictionary</a></li>
 </ul></li>
 <li class="chapter" data-level="2.5" data-path="the-shiny-app.html"><a href="the-shiny-app.html#darwinizing-your-dataset"><i class="fa fa-check"></i><b>2.5</b> Darwinizing your dataset</a></li>
 <li class="chapter" data-level="2.6" data-path="the-shiny-app.html"><a href="the-shiny-app.html#darwinizer-results"><i class="fa fa-check"></i><b>2.6</b> Darwinizer results</a><ul>
@@ -133,7 +133,7 @@ code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="3" data-path="command-line-operations.html"><a href="command-line-operations.html"><i class="fa fa-check"></i><b>3</b> Command line operations</a><ul>
 <li class="chapter" data-level="3.1" data-path="command-line-operations.html"><a href="command-line-operations.html#load-package"><i class="fa fa-check"></i><b>3.1</b> Load package</a></li>
 <li class="chapter" data-level="3.2" data-path="command-line-operations.html"><a href="command-line-operations.html#darwinizing-a-dataset"><i class="fa fa-check"></i><b>3.2</b> Darwinizing a dataset</a></li>
-<li class="chapter" data-level="3.3" data-path="command-line-operations.html"><a href="command-line-operations.html#updating-the-darwin-cloud-dictionary"><i class="fa fa-check"></i><b>3.3</b> Updating <a href="the-shiny-app.html#the-darwin-cloud-dictionary">the Darwin Cloud dictionary</a></a></li>
+<li class="chapter" data-level="3.3" data-path="command-line-operations.html"><a href="command-line-operations.html#updating-the-darwin-cloud-dictionary-1"><i class="fa fa-check"></i><b>3.3</b> Updating <a href="the-shiny-app.html#the-darwin-cloud-dictionary">the Darwin Cloud dictionary</a></a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="examples.html"><a href="examples.html"><i class="fa fa-check"></i><b>4</b> Examples</a></li>
 <li class="chapter" data-level="5" data-path="getting-your-feedback.html"><a href="getting-your-feedback.html"><i class="fa fa-check"></i><b>5</b> Getting your feedback</a><ul>
@@ -167,7 +167,7 @@ code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Inf
 <hr />
 <div id="launching-the-app" class="section level2">
 <h2><span class="header-section-number">2.1</span> Launching the app</h2>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(bdDwC) <span class="co"># Uplaod package library</span>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">library</span>(bdDwC) <span class="co"># Laod package library</span>
 <span class="kw">runDwC</span>() <span class="co"># Launch the app</span></code></pre></div>
 </div>
 <div id="app-overview" class="section level2">
@@ -176,7 +176,7 @@ code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Inf
 <img src="img/bdDwC_Getting_started.png" title="The first screen" alt="bdDwC App Overview" />
 <p class="caption">bdDwC App Overview</p>
 </div>
-<p>In the first screen, you’ll need to upload or download your biodiversity data; choose dictionary and run the Darwinizer.</p>
+<p>In the first screen, you’ll need to load your biodiversity data; choose dictionary and run the Darwinizer. There are two options, form a file on your computer, of fetch from a web based data provider.</p>
 </div>
 <div id="data-upload" class="section level2">
 <h2><span class="header-section-number">2.3</span> Data upload</h2>
@@ -210,18 +210,18 @@ code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Inf
 <div id="the-darwin-cloud-dictionary" class="section level3">
 <h3><span class="header-section-number">2.4.1</span> The Darwin Cloud dictionary</h3>
 <p>The Darwin Cloud dictionary <span class="citation">(Wieczorek et al. <a href="#ref-DarwinCloud">2017</a>)</span>, is a lookup table that accumulates different variations in DwC field names from different publishers. This valuable and critical dictionary was created and is maintained by the Kurator project (<a href="http://kurator.acis.ufl.edu/kurator-web/" class="uri">http://kurator.acis.ufl.edu/kurator-web/</a>), which provides workflow tools for data quality improvement of biodiversity data, via a user-friendly web interface. The development of bdDwC was inspired by <a href= https://github.com/kurator-org/kurator-validation/wiki/CSV-File-Darwinizer target="_blank">Kurator’s own Darwinizer</a>.</p>
-<div id="updating-the-darwin-cloud" class="section level4 unnumbered">
-<h4>Updating the Darwin Cloud</h4>
-<p>It’s recommended to update the Darwin Cloud file. This can be done easily by clicking the <strong>Update DC</strong> button.</p>
+<div id="updating-the-darwin-cloud-dictionary" class="section level4 unnumbered">
+<h4>Updating the Darwin Cloud dictionary</h4>
+<p>It’s recommended to update the Darwin Cloud dictionary file. This can be done easily by clicking the <strong>Update DC</strong> button.</p>
 <div class="figure">
-<img src="img/bdDwC_update-DC.png" title="bdDwC-app bdDwC_update-DC" alt="Updating the Darwin Cloud" />
-<p class="caption">Updating the Darwin Cloud</p>
+<img src="img/bdDwC_update-DC.png" title="bdDwC-app bdDwC_update-DC" alt="Updating the Darwin Cloud dictionary" />
+<p class="caption">Updating the Darwin Cloud dictionary</p>
 </div>
 </div>
 </div>
-<div id="your-own-dictionary" class="section level3">
-<h3><span class="header-section-number">2.4.2</span> Your own dictionary</h3>
-<p>It’s also possible to add your own dictionary by simply creating a CSV file with two columns, one for the Field Names and one for the Standard Names.</p>
+<div id="custom-dictionary" class="section level3">
+<h3><span class="header-section-number">2.4.2</span> Custom dictionary</h3>
+<p>It’s also possible to add your own dictionary by creating a CSV file with two columns, one for the Field Names and one for the Standard Names. After uploading the custom disctionary, we need to specify which field denotes the ‘User fierld names’ and which is the ‘Standard (DwC) field names’.</p>
 <div class="figure">
 <img src="img/bdDwC_personal_dictionary.png" title="bdDwC-app personal dictionary" alt="Uploading your own dictionary" />
 <p class="caption">Uploading your own dictionary</p>
@@ -230,7 +230,7 @@ code > span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Inf
 </div>
 <div id="darwinizing-your-dataset" class="section level2">
 <h2><span class="header-section-number">2.5</span> Darwinizing your dataset</h2>
-<p>Once a dataset is uploaded, the ‘Submit to Darwinizer’ button is activated, Clicking it will Darwinize the dataset.</p>
+<p>Once a dataset is uploaded, the ‘Submit to Darwinizer’ button is activated, Clicking it will begin the interactive ‘Darwinize the dataset’ process.</p>
 <div class="figure">
 <img src="img/bdDwC_Submit.png" title="bdDwC-app Submit button" alt="Submit to Darwinizer button" />
 <p class="caption">Submit to Darwinizer button</p>
